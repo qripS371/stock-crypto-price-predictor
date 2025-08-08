@@ -1,40 +1,39 @@
 # 📈 Stock & Crypto Price Predictor
 
 Predict the future of stocks and cryptocurrencies using Machine Learning!  
-This project uses financial data from Yahoo Finance to forecast prices for the next **day**, **week**, **month**, and even **year**.
+This project uses historical financial data from Yahoo Finance to forecast prices over different timeframes — **next day, week, month, and year**.
 
 ---
 
 ## 🚀 What Does This Project Do?
 
-This ML-powered system:
-- 🧠 Collects **historical stock and crypto data** (like BTC-USD, ETH-USD, AAPL, TSLA, INFY, RELIANCE.NS, etc.)
-- 🔧 Generates intelligent **technical features** (returns, volatility, momentum)
-- 🏗 Builds **regression models** to predict the closing price in 4 timeframes:
-  - **Next Day**
-  - **Next 7 Days**
-  - **Next 30 Days**
-  - **Next 365 Days**
-- 📤 Saves trained models and predictions for easy deployment or analysis
+This ML-powered forecasting system:
+
+- 🧠 **Collects historical stock and crypto data** (e.g., `BTC-USD`, `ETH-USD`, `TSLA`, `GOOGL`, `MSFT`, `NVDA`, etc.)
+- 🔧 **Generates technical features** like returns, volatility, and momentum
+- 🏗 **Trains regression models** to predict the closing price across 4 time horizons:
+  - Next Day
+  - Next 7 Days
+  - Next 30 Days
+  - Next 365 Days
+- 📤 **Saves trained models and future price predictions** for analysis or deployment
 
 ---
 
 ## 🔍 Currently Analysed Assets
 
-This model currently tracks and forecasts prices for:
-
 ### 📊 Stocks:
-- Apple (`AAPL`)
 - Tesla (`TSLA`)
-- Infosys (`INFY.NS`)
-- Reliance Industries (`RELIANCE.NS`)
-- HDFC Bank (`HDFCBANK.NS`)
+- Alphabet (`GOOGL`)
+- Microsoft (`MSFT`)
+- NVIDIA (`NVDA`)
+- BYD Company (`BYDDY`)
 
 ### 💱 Cryptocurrencies:
 - Bitcoin (`BTC-USD`)
 - Ethereum (`ETH-USD`)
 - Solana (`SOL-USD`)
-- Cardano (`ADA-USD`)
+- Binance Coin (`BNB-USD`)
 - Ripple (`XRP-USD`)
 
 ---
@@ -46,47 +45,53 @@ This model currently tracks and forecasts prices for:
 
 ## 📈 How the Prediction Works
 
-1. **Download** historical prices (Open, High, Low, Close, Volume)
-2. **Calculate Features**:
-   - Daily **Returns**
-   - **Volatility** (5-day rolling std)
-   - **Momentum** (price difference over 5 days)
-3. **Train a Linear Regression Model** on those features
-4. **Forecast Closing Prices** for:
-   - **1 day ahead**
-   - **7 days ahead**
-   - **30 days ahead**
-   - **365 days ahead**
+1. **Download** historical price data (Open, High, Low, Close, Volume)
+2. **Generate Features**:
+   - Daily Returns
+   - Volatility (5-day rolling standard deviation)
+   - Momentum (5-day price difference)
+3. **Train Linear Regression Models**
+4. **Forecast** closing prices for:
+   - 1 Day Ahead
+   - 7 Days Ahead
+   - 30 Days Ahead
+   - 365 Days Ahead
 
 ---
 
 ## 🛠 Next Goals
 
-🔄 Upgrade from Linear Regression to advanced models:
+🔄 Upgrade ML Models:
 - 🪵 Random Forest
 - ⚡ XGBoost
 - 🧠 LSTM (Deep Learning)
 
-📊 Add:
-- More technical indicators (MACD, RSI, etc.)
-- Visualizations and dashboard
-- Backtesting for investment strategies
+📊 Add Features:
+- Technical Indicators: MACD, RSI, Bollinger Bands
+- Interactive Dashboards / Charts
+- Strategy Backtesting Tools
 
 ---
 
 ## 💡 Why Use This?
 
 Whether you're a:
-- Data science learner 📚
-- Stock or crypto enthusiast 📉📈
-- Quant trader or ML hobbyist 🤖
 
-This project gives you a solid foundation to explore financial forecasting with real-world data.
+- 📚 **Data science learner**
+- 📉📈 **Stock or crypto enthusiast**
+- 🤖 **Quant trader or ML hobbyist**
+
+This project offers a powerful and educational foundation for exploring real-world **financial forecasting** using Machine Learning.
 
 ---
 
 ## 📬 Contributions Welcome!
 
-Feel free to fork, tweak, and contribute ideas! Future-proof investing starts with smart data.
+Fork it. Tweak it. Extend it.  
+Contributions of all kinds are welcome — from bug fixes and documentation to feature improvements and model upgrades.
 
+---
 
+## 📄 License
+
+This project is licensed under the MIT License.
